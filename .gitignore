@@ -1,0 +1,12 @@
+.idea
+__pycache__
+*.zip
+wandb
+checkpoints
+trash
+weigths
+*.ckpt
+*.pt
+diff.json
+predictions.json
+other-ideas

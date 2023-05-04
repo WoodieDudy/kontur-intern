@@ -1,0 +1,18 @@
+data:
+  train_data_path: ./data/train.json
+  test_data_path: ./data/test.json
+  split: [0.7, 0.2, 0.1]
+
+model:
+  model_name: DeepPavlov/rubert-base-cased
+  unfreeze_layers: ["encoder.layer.10", "encoder.layer.11"]
+
+training:
+  project_name: "kontur-text-extraction"
+  experiment_name: "exp6-final-test"
+  description: "training to be displaed in notebook"
+  batch_size: 32
+  epochs: 30
+  precision: 16
+  seed: 42
+  
